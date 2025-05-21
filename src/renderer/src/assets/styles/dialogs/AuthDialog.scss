@@ -1,0 +1,91 @@
+.authLoginContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+  app-region: drag;
+  height: 100vh;
+}
+
+.authLoginHeader {
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  app-region: no-drag;
+}
+
+.authLoginOptions {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.authLoginOption {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.authLoginButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 600;
+  gap: 16px;
+  padding: 16px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  app-region: no-drag;
+  transition:
+    background-color 0.2s ease-in-out,
+    border-color 0.2s ease-in-out,
+    color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.4);
+
+    img,
+    svg {
+      opacity: 1;
+    }
+  }
+
+  img {
+    width: 24px;
+    height: 24px;
+    opacity: 0.6;
+    transition: opacity 0.2s ease-in-out;
+  }
+}
+
+.authAnonymousButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  justify-content: center;
+  padding: 4px 0;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0.6;
+  app-region: no-drag;
+}
+
+.authDisclaimer {
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  opacity: 0.6;
+  app-region: no-drag;
+}
